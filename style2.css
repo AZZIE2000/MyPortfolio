@@ -97,12 +97,59 @@ video{
       border-radius: 5%;
       /* padding: 5px; */
     /* display: flex; */
+    z-index: 10;
     text-align: center;
     /* align-items: center; */
     /* justify-content: center; */
 }
+.ana{
+  position: absolute;
+  height: 500px;
+  object-fit: cover;
+  /* transform: scale(.5); */
+}
+@media ( min-width: 300px){
+ .ana{height: 490px;}
+}
+@media ( min-width: 500px){
+ .ana{height: 600px;}
+}
+@media ( min-width: 800px){
+ .ana{height: 700px;}
+}
+
 .float-lap{
     position: absolute;
+    height: 300px;
+    /* transform: translate(140px, -190px) rotate(-35deg); */
+    animation-name: floaty;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  /* transform:rotate(10deg) ; */
+  
+}
+@keyframes floaty {
+  from   {transform: translate(120px, -230px) rotate(-5deg);}
+  to  {transform: translate(120px, -250px) rotate(-5deg) ;}
+   
+}
+.float-cam{
+  position: absolute;
+    height: 160px;
+    /* transform: translate(140px, -190px) rotate(-35deg); */
+    animation-name: floaty-cam;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  /* transform:rotate(10deg) ; */
+}
+@keyframes floaty-cam {
+  from   {transform: translate(-150px, -270px) rotate(-5deg);}
+  to  {transform: translate(-150px, -250px) rotate(-5deg) ;}
+   
 }
 .sec-cards-2{
     background-color: black;
