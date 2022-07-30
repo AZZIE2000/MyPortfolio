@@ -16,54 +16,231 @@
   <body>
     <header>
       <!-- Start navbar -->
-      <nav class="navbar position-fixed">
-        <div class="container-fluid">
-          <!-- logo -->
-          <a class="navbar-brand ms-lg-5" href="./index.html">
-            <img
-              src="./res/logo.png"
-              alt=""
-              width="75"
-              height="75"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <!-- logo -->
-          <!-- nav -->
-          <ul class="nav me-lg-5 position-fixed top-0 end-0 mt-4">
-            <li class="nav-item bg-white rounded-3">
-              <a class="nav-link text-dark" aria-current="page" href="#"
-                >About</a
-              >
-            </li>
-            <li class="nav-item bg-white mx-1 rounded-3">
-              <a class="nav-link text-dark" href="#">Projects</a>
-            </li>
-            <li class="nav-item bg-white rounded-3">
-              <a class="nav-link text-dark" href="#">Contacts</a>
-            </li>
+      <nav>
+        <div class="mainshow">
+          <a href="./index2.html"> <img src="./res/logo.png" alt="" /></a>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects-sec">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
-          <!-- nav -->
         </div>
       </nav>
-
-      <!-- End navbar -->
     </header>
     <!-- video -->
 
-    <div class="videobanner">
-      <video
-        id="vid-banner"
-        src="./res/banner1.mp4"
-        autoplay
-        muted
-        loop
-      ></video>
-    </div>
-
-    <!-- video -->
     <main>
-      <section class="sec2"></section>
+      <div class="videobanner">
+        <video
+          id="vid-banner"
+          src="./res/banner2.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <h1 class="azzie">
+          HELLO <br />
+          I'M AZZAM
+        </h1>
+        <img class="ana" src="./res/ana.png" alt="" />
+        <img class="float-lap" src="./res/laptop.png" alt="" />
+        <img class="float-cam" src="./res/cam2.png" alt="" />
+      </div>
+      <!-- video -->
+      <!-- start-about -->
+      <section id="about" class="aboutme-sec">
+        <h1>MY LIFE</h1>
+        <div class="all-cards">
+          <div class="card">
+            <div class="image">
+              <img src="./res/cards-vfx.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>I'm a video editor / VFX Artist</h1>
+              <p>
+                I started my journey right after highschool as I learned video
+                editing as a start through online courses, then went on with my
+                career to the next step by collaborating with new customers and
+                companies, from there I found an amazing opportunity to enhance
+                my knowledge by learning VFX to satisfy the market needs and to
+                get more experience.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./res/cards-adobe.png" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>I'm a graphic designer</h1>
+              <p>
+                After a long run, I had the idea of upgrading my skills in the
+                media field for a while so I started a Long graphic design
+                course and got pretty good in no time ;) And thats how I managed
+                to master Adobe Pr,AI,PS,AE and XD.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./res/cards-lap.png" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>Full-Stack Web Developer</h1>
+              <p>
+                well, I've always loved coding since i was young, Life went on
+                and I saw an opportunity to join a great institution "Orange
+                Coding Academy" to learn web-development and there I am having
+                fun, learning and enjoying my life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start-sec-3-projects -->
+      <section id="projects-sec">
+        <h1 class="sec3-hi">projects</h1>
+        <div id="cards">
+          <div class="card-abc">
+            <a href="#"> <img src="./res/propic1.png" alt="" /></a>
+            <br />
+            <h1>"JOBY" Mockup</h1>
+            <br />
+            <br />
+            <p>A mockup for a job portal website ready to publish.</p>
+          </div>
+
+          <div class="card-abc">
+            <a href="#"> <img src="./res/propic2.png" alt="" /></a>
+            <br />
+            <h1>Bootstrap mockup</h1>
+            <br />
+            <br />
+            <p>A responsive mockup test using bootstrap.</p>
+          </div>
+
+          <div class="card-abc">
+            <a href="#"><img src="./res/propic3.png" alt="" /></a>
+            <br />
+            <h1>BLOSSOM VPN</h1>
+            <br />
+            <br />
+            <p>commercial VPN website fully functioning</p>
+          </div>
+        </div>
+        <!-- <h1 class="sec3-hi">Have a look,enjoy :)</h1> -->
+      </section>
+      <!-- end-sec-3-projects -->
+      <!-- <section class="about-me-section">
+        <div class="about-me-card">
+          <img class="r3d-sec-img1" src="./res/cards-vfx.jpg" alt="" />
+          <div class="r3d-text">
+            <h1>I'm a video editor / VFX Artist</h1>-----------------------------
+            <p>
+              I started my journey right after highschool as I learned video
+              editing as a start through online courses, then went on with my
+              career to the next step by collaborating with new customers and
+              companies, from there I found an amazing opportunity to enhance my
+              knowledge by learning VFX to satisfy the market needs and to get
+              more experience
+            </p>
+          </div>
+        </div>
+        <div class="about-me-card"></div>
+        <div class="about-me-card"></div>
+      </section> -->
+      <!-- <section id="about-sec" class="sec-cards-2">
+        <div class="container row-1 card-group pt-4 gap-4 min-vh-100">
+          <div class="card mb-3 border-info bg-transparent">
+            <img src="./res/cards-vfx.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-white">
+                I'm a video editor / VFX Artist
+              </h5>
+              <p class="card-text text-white">
+                I started my journey right after highschool as I learned video
+                editing as a start through online courses, then went on with my
+                career to the next step by collaborating with new customers and
+                companies, from there I found an amazing opportunity to enhance
+                my knowledge by learning VFX to satisfy the market needs and to
+                get more experience.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3 border-danger bg-transparent">
+            <img src="./res/cards-adobe.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-white">I'm a graphic designer</h5>
+              <p class="card-text text-white">
+                After a long run, I had the idea of upgrading my skills in the
+                media field for a while so I started a Long graphic design
+                course and got pretty good in no time ;) And thats how I managed
+                to master Adobe Pr,AI,PS,AE and XD.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3 border-info bg-transparent">
+            <img src="./res/cards-lap.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-white">Full-Stack Web Developer</h5>
+              <p class="card-text text-white">
+                well, I've always loved coding since i was young, Life went on
+                and I saw an opportunity to join a great institution "Orange
+                Coding Academy" to learn web-development and there I am having
+                fun, learning and enjoying my life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <div class="container">
+        <h1 class="d-flex justify-content-center">Experiences</h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-head">
+                <img
+                  src="https://picsum.photos/200"
+                  class="card-img-top p-3"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </main>
   </body>
 </html>
