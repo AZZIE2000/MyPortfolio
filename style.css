@@ -403,7 +403,7 @@ video{
   color: rgb(255, 255, 255);
   margin: 0 auto;
   /* position: relative; */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .card{
   border: 3px solid red;
