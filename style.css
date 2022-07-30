@@ -6,12 +6,12 @@
 }
 *::-webkit-scrollbar {
     display: none;
+    scroll-behavior: smooth;
   }
   header nav{
     position: absolute ;
     width: 100%;
     z-index: 1;
-    /* bottom: 100vh; */
   }
  
 .mainshow{
@@ -62,7 +62,6 @@ align-items: center;
     text-decoration: none;
     transition-property: all;
     transition-duration: .4s;
-    /* background-color: white; */
     padding: 5px;
     border-radius: 5%;
   }
@@ -78,7 +77,7 @@ video{
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    transform: scale(1);
+    
   }
 
 
@@ -94,20 +93,14 @@ video{
       transform: translate(-20px,-30px);
       color: rgb(255, 255, 255);
       border: 5px solid  rgb(255, 255, 255);
-      /* background-color: rgb(255, 255, 255); */
       border-radius: 5%;
-      /* padding: 5px; */
-    /* display: flex; */
     z-index: 10;
     text-align: center;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 .ana{
   position: absolute;
   height: 500px;
   object-fit: cover;
-  /* transform: scale(.5); */
 }
 @media ( min-width: 300px){
  .ana{height: 490px;}
@@ -123,14 +116,11 @@ video{
     position: absolute;
     height: 300px;
     transition: all 1s ;
-    /* transform: translate(140px, -190px) rotate(-35deg); */
     animation-name: floaty;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  /* transform:rotate(10deg) ; */
-  
 }
 @keyframes floaty {
   from   {transform: translate(120px, -230px) rotate(-5deg);}
@@ -140,14 +130,13 @@ video{
 .float-cam{
   position: absolute;
    transition: all 1s ;
-    /* height: 160px; */
-    /* transform: translate(140px, -190px) rotate(-35deg); */
+
     animation-name: floaty-cam;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  /* transform:rotate(10deg) ; */
+
 }
 
 @media ( min-width: 300px){
@@ -194,8 +183,6 @@ video{
   .float-lap{height: 330px;}
     
 }
-
-
 /*start-3rd-projects-sec */
 #projects-sec{
   background-color: black;
@@ -228,7 +215,6 @@ video{
   }
   #cards div:nth-child(1):hover{
     box-shadow: 0px 0px 10px 2px rgb(9, 206, 250) ;
-    /* box-shadow: 20px 20px 50px 15px grey; */
   }
   #cards div:nth-child(2){
     border: 2px solid rgb(255, 255, 255);
@@ -236,7 +222,6 @@ video{
   }
   #cards div:nth-child(2):hover{
     box-shadow: 0px 0px 10px 2px rgb(255, 255, 255) ;
-    /* box-shadow: 20px 20px 50px 15px grey; */
   }
   #cards div:nth-child(3){
     border: 2px solid red;
@@ -244,7 +229,6 @@ video{
   }
   #cards div:nth-child(3):hover{
     box-shadow: 0px 0px 10px 5px rgb(255, 0, 0) ;
-    /* background-color: rgba(255, 0, 0, 0.792); */
   }
   
   @media (min-width: 300px) {
@@ -265,24 +249,16 @@ video{
     display: block;
     margin: 0 auto;
     font-size: larger;
-    /* text-align: ; */
     text-align: center;
     
 
 }
 .card-abc h1{
-    /* letter-spacing: 2px; */
     text-align: center;
-    /* line-height: 2rem; */
     display: block;
     margin: 0 auto;
-    
-    
-
 }
 .card-abc img{
-    /* height: 200px;
-    width: 200px; */
     display: block;
     margin: 5px auto;
     width: 250px;
@@ -329,27 +305,13 @@ video{
 
   }
   .about-me-card{
-    /* grid-column: auto; */
-    /* background-color: rgb(16, 65, 179); */
-    /* margin: 0 auto; */
-    /* height: auto; */
     margin:0 auto;
     padding: 10px;
     border: 1px solid red;
-    /* width: 500px; */
-    /* display: flex */
-    
-    
-  
-    /* width: 90%; */
     overflow: scroll;
-
   }
   .r3d-sec-img1{
-    /* display: block; */
-    /* height: 250px; */
     display: flex;
-    /* justify-content: center; */
     margin: auto  ;
     width: 50%;
   }
@@ -358,32 +320,7 @@ video{
     display: block  ;
     margin: 10px auto ;
     align-items: center;
-    /* height: auto; */
-    /* width: auto; */
-    /* justify-content: spac  e-betwee ; */
   }
-  /* @media (min-width: 300px){
-    .r3d-sec-img1{
-      display: flex;
-      margin: 10px auto;
-      display: block  ;
-      margin: 10px auto ;
-      align-items: center;
-
-      
-    }
-    .r3d-text{
-      padding: 30px;
-    }
-    .r3d-text h1{
-      font-size: larger;
-      padding-bottom: 30px;
-    }
-    .about-me-card{
-      width: 550px;
-    }
-  }
-     */
  
 .aboutme-sec{
   background-color: black;
@@ -393,26 +330,19 @@ video{
   place-items: center center  ;
   overflow: scroll;
 }
-/* .aboutme-sec h1{
-  padding-top: 35px;
-  padding-bottom: 20px;
-  color: white;
-} */
+
 .all-cards{
   background-color: black ;
   display: grid;
   gap: 10px;
   color: rgb(255, 255, 255);
   margin: 0 auto;
-  /* position: relative; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .card{
   border: 3px solid red;
-  /* border-radius: ; */
   position: relative;
   margin: 0 auto;
-  /* height: 90%; */
 }
 .image{
  position: relative;
@@ -439,12 +369,9 @@ html{
   overflow: scroll;
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
-  
-  
 }
 #cards{
   padding-top: 10px;
-
 }
 .about-header{
   color: white;
@@ -484,7 +411,6 @@ footer{
   100% {border-color: rgb(255, 0, 0);}
 }
 
-
 @media(min-width:300px){
   @keyframes phones {
     0% {
@@ -501,7 +427,6 @@ footer{
   }
   .blue-phone-img{
     position: absolute;
-    /* transform: translate(-1px, 0px); */
     width: 40%;
     left: 100px;
     top: 200px;
@@ -529,8 +454,6 @@ footer{
     width: 350px;
   }
 }
-
-
 
 @media(min-width:500px){
   @keyframes phones {
@@ -622,7 +545,6 @@ footer{
   display: block;
   margin: auto;
   padding-top: 20px;
-  /* background-color: red; */
   width: 100%;
   height: 200px;
   z-index: 10;
