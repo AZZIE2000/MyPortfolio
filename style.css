@@ -430,3 +430,15 @@ video{
 .card-text h1{
   font-size: xx-large;
 }
+
+html{
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  
+}
+#cards{
+  padding-top: 10px;
+
+}
