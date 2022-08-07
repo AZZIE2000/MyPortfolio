@@ -146,7 +146,19 @@ video {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100px;
+}
 /* responsive part */
+@media (max-width: 400px) {
+  .arrow {
+    display: none;
+  }
+}
 @media (min-width: 300px) {
   @keyframes floaty-cam {
     from {
@@ -271,7 +283,8 @@ video {
 .card-text {
   background-color: black;
   height: 100%;
-  padding: 50px;
+  padding: 10px 50px;
+  font-size: large;
 }
 .card-text h1 {
   font-size: xx-large;
@@ -393,6 +406,7 @@ video {
 .card-front {
   transform: rotateY(0deg);
   z-index: 2;
+  font-weight: bold;
 }
 
 /* .card-back */
@@ -565,7 +579,6 @@ button:focus + .design-container {
   padding: 1rem;
   margin: 10px 15px;
   height: 500px;
-
   display: inline-block;
 }
 #cards div:nth-child(1) {
